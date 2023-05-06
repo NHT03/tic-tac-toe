@@ -1,0 +1,41 @@
+.game {
+  display: flex;
+
+}
+.board{
+  margin-top: 50px;
+  height: 250px;
+  width: 250px;
+  margin-left: 50px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+}
+.square {
+  cursor: pointer;  
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.game-info{
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.game-info li {
+  list-style-type: nome;
+}
+.game-info button {
+  font-size: 13px;
+  font-weight: bolder;
+}
+.status {
+  font-size: 20px;
+}
+.status-winner{
+  font-weight: bold;
+  font-size: 20px;
+  color: blue;
+}
