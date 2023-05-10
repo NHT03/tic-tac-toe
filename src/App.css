@@ -4,21 +4,21 @@
 }
 .board{
   margin-top: 50px;
-  height: 250px;
-  width: 250px;
+  height: 1111px;
+  width: 1111px;
   margin-left: 50px;
-  border: 1px solid black;
+  border: 1px solid #ccc;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(25,1fr);
+  grid-template-rows: repeat(25,1fr);
 }
 .square {
   cursor: pointer;  
-  border: 1px solid black;
+  border: 1px solid #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 .game-info{
   margin-top: 100px;
@@ -32,10 +32,16 @@
   font-weight: bolder;
 }
 .status {
-  font-size: 20px;
+  position: fixed;
+  margin-left: 200px;
+  font-size: 25px;
+  color: rgb(82, 22, 222);
 }
 .status-winner{
+  position: fixed;
+  top: 30%;
+  left: 40%;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 60px;
   color: blue;
 }
